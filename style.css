@@ -1,0 +1,11 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.menu ul {
+  display: none;
+  border-left: dotted;
+  border-width: 1px;
+}

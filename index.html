@@ -1,0 +1,40 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery.min.js"></script>
+
+<ul class="menu">
+  <li>
+    One
+    <ul class="menu">
+      <li>
+        Alpha
+        <ul class="menu">
+          <li>Hello</li>
+          <li>World</li>
+        </ul>
+      </li>
+      <li>
+        Beta
+        <ul class="menu">
+          <li>Hello</li>
+          <li>World</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Two
+    <ul class="menu">
+      <li>Alpha</li>
+      <li>Beta</li>
+    </ul>
+  </li>
+  <li>Three</li>
+  <li>Four</li>
+</ul>
+
+<script type="text/javascript">
+  $(".menu").children().click(function(e) {
+    $(this).siblings().find("ul").hide();
+    $(this).children().show();
+  });
+</script>
